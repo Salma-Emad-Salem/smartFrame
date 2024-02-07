@@ -1,13 +1,163 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root{
+  --main-color: #1abc9c;
+  --second-color: #2c3e50;
+  --text-color:#fff
 }
+a{
+  color: var(--text-color) !important;
+}
+html{
+  overflow-x: hidden !important;
+}
+.home, .About {
+  background-color: var(--main-color) !important;
+}
+.navbarr{
+  background-color:var(--second-color);
+}
+.navbarr a{
+  color:var(--text-color);
+}
+.navbarr a:hover{
+  color:var(--text-color) !important;
+}
+.navbarr .logo{
+  font-size: 32px;
+  font-weight: 500;
+}
+.nav-link{
+  margin-left: 20px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.active{
+  border: 2px solid var(--main-color) !important;
+  background-color: #1abc9c !important;
+  border-radius: 10px;
+  color: var(--text-color) !important;
+}
+.home{
+  padding-top: 130px !important;
+  padding-bottom: 40px !important;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.home .img{
+  width: 300px !important;
+}
+.About{
+  height: 600px !important;
+  padding-top: 200px;
+  color: var(--text-color) !important;
+}
+.stars{
+  font-size: 22px !important;
+  margin-block: 15px;
+  display: flex !important;
+  justify-content: center !important;
+  position: relative !important;
+
+}
+.stars::before{
+  content: "";
+  width: 80px !important;
+  height: 2px !important;
+  border-top: 4px solid #fff !important;
+  position: absolute !important;
+  top: 8px;
+  left: 42%;
+  z-index: 999;
+
+}
+.stars::after{
+  content: "";
+  width: 80px !important;
+  height: 2px !important;
+  border-top: 4px solid #fff !important;
+  position: absolute !important;
+  top: 8px;
+  right: 42%;
+  z-index: 999;
+}
+.About p{
+  padding-top: 15px;
+}
+.About .first{
+  padding-left: 195px !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  
+}
+.About  .sec{
+  padding-right: 195px !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+}
+.details{
+  background-color:#2C3E50 !important;
+  color:var(--text-color) !important;
+}
+.details .ico .know{
+  font-size: 18px;
+  margin-inline: 15px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 6px 7px;
+
+}
+.footer{
+  background-color:#1A252F;
+  color: var(--text-color);
+}
+.portfilio, .portfilio .stars , .portfilio .stars::after ,.portfilio .stars::before,
+.Contact, .Contact .stars , .Contact .stars::after ,.Contact .stars::before{
+  color: var(--second-color) !important;
+  border-color: var(--second-color) !important;
+}
+.portfilio{
+  padding-top: 150px !important;
+  padding-bottom: 50px;
+}
+.portfilio .imgPort{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  position: relative;
+
+}
+.portfilio .imgPort img{
+  width: 100% !important;
+  height: 100%;
+  border-radius: 20px ;
+
+}
+.portfilio .layOut{
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: 62px;
+  border-radius: 20px ;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  transition:  all .7s;
+  opacity: 0;
+}
+.layOut:hover{
+  opacity: 1;
+}
+.Contact{
+  height: 600px !important;
+  padding-top: 150px;
+}
+form input{
+  border: none !important;
+  border-bottom: 3px #eee solid !important ;
+}
+form button{
+  color: #fff !important;
+  background-color: #1abc9c !important;
 }
